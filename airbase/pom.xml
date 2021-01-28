@@ -516,14 +516,8 @@
                 <plugin>
                     <groupId>pl.project13.maven</groupId>
                     <artifactId>git-commit-id-plugin</artifactId>
-                    <version>4.0.3</version>
+                    <version>2.1.13</version>
                     <configuration>
-                        <!-- Include only properties used above to speed up build (https://github.com/git-commit-id/git-commit-id-maven-plugin/issues/462) -->
-                        <includeOnlyProperties>
-                            <includeOnlyProperty>\Qgit.build.time</includeOnlyProperty>
-                            <includeOnlyProperty>\Qgit.commit.id</includeOnlyProperty>
-                            <includeOnlyProperty>\Qgit.commit.id.describe</includeOnlyProperty>
-                        </includeOnlyProperties>
                         <dateFormat>yyyy-MM-dd'T'HH:mm:ssZZ</dateFormat>
                         <gitDescribe>
                             <tags>true</tags>
